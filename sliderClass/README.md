@@ -2,26 +2,24 @@
 
 #### Version 1.0.0
 
-https://dmitriyshvanyk.github.io/sliderClass/
-
 
 ## Start
 
-Для запуска проекта локально, необходимо его скачать
+To start a project locally, you need to download it
 
 `git clone https://github.com/DmitriyShvanyk/sliderClass.git`
 
 
 ## Development
 
-Для запуска dev версии
+To run dev version
 
 `npm run dev`
 
 
 ## Production
 
-Для запуска production версии
+To launch the production version
 
 `npm run build`
 
@@ -29,7 +27,7 @@ https://dmitriyshvanyk.github.io/sliderClass/
 
 ## Deploy
 
-Для запуска deploy версии
+To run deploy version
 
 `npm run deploy`
 
