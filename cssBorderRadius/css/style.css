@@ -1,0 +1,129 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-size: 14px;
+	line-height: 1.35;
+	font-family: 'Open Sans', tahoma, sans-serif;
+	background: #F9F9F9;
+}
+
+
+
+
+.gbr{
+	padding: 20px;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.gbr__title{
+	text-align: center;
+	margin: 25px auto;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+
+.gbr__content{
+	border: 2px solid #e0e0e0;
+	display: table;
+	height: 100px;
+	width: 100%;
+	table-layout: fixed;
+	background: #fff;
+}
+.gbr__content-cell{
+	display: table-cell;
+	vertical-align: middle;
+	padding: 1em 3em;
+}
+.gbr__content-cell:nth-of-type(2){
+	text-align: center;
+}
+.gbr__content__item{
+	display: block;
+	margin: 15px 0;
+}
+
+.gbr__content label{
+	font-weight: 400;
+	font-size: 13px;
+}
+.gbr__content label,
+.gbr__content .inputBR{
+	display: block;
+	margin-bottom: 7px;
+}
+.gbr__content .inputBR{
+	height: 40px;
+	padding: 5px 15px;	
+	border: 1px solid #E0E0E0;
+	width: 100%;
+}
+
+.gbr__changeable{
+	display: inline-block;
+	vertical-align: top;
+	width: 100%;
+	height: 250px;
+	background: #37A000;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+.gbr__content-code{
+	padding: 5px 1em;
+	color: #fff;
+	margin: 15px auto;
+	display: block;	
+}
+
+@media screen and (max-width: 767px) {
+	
+	.gbr__content,
+	.gbr__content-cell{
+		display: block;
+		height: auto;
+	}
+	.gbr__content-cell{		
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+	.gbr__content-cell:nth-of-type(1){
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;	
+		-ms-flex-wrap: wrap;	
+		    flex-wrap: wrap;
+	}
+	.gbr__content-cell:nth-of-type(2){
+		padding-top: 0;
+	}
+	.gbr__content__item{
+		width: 50%;
+		padding-left: .5em;
+		padding-right: .5em;
+	}
+
+}
+
+@media screen and (max-width: 479px) {
+	
+	.gbr__content-code{
+		font-size: 13px;
+	}
+
+}
