@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Generate password</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+	<div class="gen-password">
+	
+		<h1 class="gen-password__title">Generate password</h1>
+		
+		<form action="#" class="gen-password__form">
+			<div class="gen-password__form-item">
+				<label for="param-1">Length string (<span id="password-length">10</span>)</label>
+				<input type="range" id="param-1" value="10" max="50">
+			</div>
+			<div class="gen-password__form-item">
+				<label class="gen-password__form-checkbox">
+					<input type="checkbox" id="param-2" checked> Numbers
+				</label>
+			</div>
+			<div class="gen-password__form-item">
+				<label class="gen-password__form-checkbox">
+					<input type="checkbox" id="param-3" checked> Lower case
+				</label>
+			</div>
+			<div class="gen-password__form-item">
+				<label class="gen-password__form-checkbox">
+					<input type="checkbox" id="param-4"> Upper case
+				</label>
+			</div>
+			<div class="gen-password__form-item">
+				<label class="gen-password__form-checkbox">
+					<input type="checkbox" id="param-5"> Special characters
+				</label>
+			</div>
+			<div class="gen-password__form-item">
+				<button type="button" class="gen-password__form-btn">Generate</button>
+			</div>
+		</form>
+		
+		<div class="gen-password__output"></div>
+	
+	</div>
+	
+	<script src="js/scripts.js"></script>
+</body>
+</html>
