@@ -1,0 +1,16 @@
+@import url(../slider/__preview/slider__preview.css);
+@import url(../slider/__preview-image/slider__preview-image.css);
+@import url(../slider/__preview-text/slider__preview-text.css);
+@import url(../slider/__items/slider__items.css);
+@import url(../slider/__item/slider__item.css);
+@import url(../slider/__picture/slider__picture.css);
+@import url(../slider/__image/slider__image.css);
+@import url(../slider/__controls/slider__controls.css);
+@import url(../slider/__control/slider__control.css);
+
+
+.slider {
+  max-width: 600px;
+  margin: 1em auto;
+  width: 100%;
+}
