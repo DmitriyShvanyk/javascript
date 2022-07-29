@@ -1,0 +1,6 @@
+.slider__picture {
+  padding-bottom: 75%;
+  overflow: hidden;
+  position: relative;
+  height: 0;
+}

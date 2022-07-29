@@ -2,8 +2,6 @@
 
 #### Version 1.0.0
 
-https://dmitriyshvanyk.github.io/select/
-
 
 ## Start
 

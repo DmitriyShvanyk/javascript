@@ -1,0 +1,17 @@
+.slider__control {
+  cursor: pointer;
+  padding: 10px 15px;
+  background-color: royalblue;
+  border: 1px solid royalblue;
+  color: #fff;
+  border-radius: 0;
+  margin: 0 5px;
+  transition: background-color .3s ease, border-color .3s ease;
+}
+
+.slider__control:hover,
+.slider__control:focus,
+.slider__control:active {
+  background-color: teal;
+  border-color: teal;
+}
