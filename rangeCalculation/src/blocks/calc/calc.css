@@ -1,0 +1,53 @@
+.calc {
+  max-width: 395px;
+  width: 100%;
+  margin: 1.5rem auto;
+  background-color: #FAFAF8;
+  border: 2px solid #15A0FC;
+  padding: 30px 35px;
+  color: #373737;
+  font-weight: 500;
+}
+
+.calc__head {
+  text-align: center;
+}
+
+.calc__title {
+  margin: 0 0 1.65rem;
+  font-size: 1.2rem;
+}
+
+.calc__price {
+  font-size: 4.2rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  line-height: .65;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.calc__price-time {
+  font-size: 1rem;
+}
+
+.calc__form {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.calc__foot {
+  border-top: 1px solid #ccc;
+  padding-top: 17px;
+  line-height: 1.45;
+}
+
+.calc__item+.calc__item {
+  margin-top: 25px;
+}
+
+.calc__item {
+  margin-bottom: 13px;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Calc range</title>
+  <meta charset="UTF-8">
+  <meta name="keywords" content='Calc range'>
+  <meta name="description" content='Calc range'>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="shortcut icon" href="./favicon.ico">
+  <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.chunks.index.css %>">
+</head>
+
+<body>
+
+  <div class="root">
+
+    <!--calc.begin-->
+    <div class="calc">
+      <div class="calc__head">
+        <h2 class="calc__title">How match can you earn?</h2>
+        <h3 class="calc__price">
+          <span class="calc__price-curr">$</span>
+          <span class="calc__price-total">1800</span>
+          <span class="calc__price-time">/&nbsp;wk</span>
+        </h3>
+      </div>
+      <form action="#" class="calc__form" method="POST">
+        <div class="calc__item">
+          <div class="range">
+            <input type="range" class="range__control" name="range-1" min="1" max="50" value="15"
+              aria-label="Amount per class" data-color-start="#F7CC6B" data-color-end="#F9ECCD">
+            <div class="range__content">
+              <div class="range__caption">Amount per class</div>
+              <div class="range__num range__num--curr"></div>
+            </div>
+          </div>
+        </div>
+        <div class="calc__item">
+          <div class="range">
+            <input type="range" class="range__control" name="range-2" min="1" max="30" value="20"
+              aria-label="No. of attendees" data-color-start="#F7CC6B" data-color-end="#F9ECCD">
+            <div class="range__content">
+              <div class="range__caption">No. of attendees</div>
+              <div class="range__num range__num--simple"></div>
+            </div>
+          </div>
+        </div>
+        <div class="calc__item">
+          <div class="range">
+            <input type="range" class="range__control" name="range-3" min="1" max="16" value="6"
+              aria-label="No. of classes per week" data-color-start="#F7CC6B" data-color-end="#F9ECCD">
+            <div class="range__content">
+              <div class="range__caption">No. of classes per week</div>
+              <div class="range__num range__num--simple"></div>
+            </div>
+          </div>
+        </div>
+      </form>
+      <div class="calc__foot">
+        <div class="calc__info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis aperiam aut officia
+          voluptates. Id aliquam qui consequatur alias.</div>
+      </div>
+    </div>
+    <!--calc.end-->
+
+  </div>
+
+  <script src="<%= htmlWebpackPlugin.files.chunks.index.entry %>"></script>
+
+</body>
+
+</html>
