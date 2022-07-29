@@ -1,0 +1,6 @@
+@import url(../section/__title/section__title.css);
+
+.section{
+    position: relative;
+    z-index: 1;
+}

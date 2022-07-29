@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>Marquee</title>
+  <meta charset="UTF-8">
+  <meta name="keywords" content='Marquee'>
+  <meta name="description" content='Marquee'>
+  <meta name="author" content='Dmitriy Shvanyk'>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="shortcut icon" href="./favicon.ico">
+  <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.chunks.index.css %>">
+</head>
+
+<body>
+
+  <div class="root">
+
+    <!--section.begin-->
+    <section class="section">
+      <h1 class="section__title">
+        Marquee
+      </h1>
+      <div class="marquee">
+        <div class="marquee__inner">
+          <div class="marquee__item">SCSS</div>
+          <div class="marquee__item">Javascript</div>
+          <div class="marquee__item">ES6</div>
+          <div class="marquee__item">Webpack</div>
+          <div class="marquee__item">DOM</div>
+          <div class="marquee__item">Event Loop</div>
+        </div>
+      </div>
+      <div class="marquee marquee--reverse">
+        <div class="marquee__inner">
+          <div class="marquee__item">SCSS</div>
+          <div class="marquee__item">Javascript</div>
+          <div class="marquee__item">ES6</div>
+          <div class="marquee__item">Webpack</div>
+          <div class="marquee__item">DOM</div>
+          <div class="marquee__item">Event Loop</div>
+        </div>
+      </div>
+      <div class="marquee">
+        <div class="marquee__inner">
+          <div class="marquee__item">SCSS</div>
+          <div class="marquee__item">Javascript</div>
+          <div class="marquee__item">ES6</div>
+          <div class="marquee__item">Webpack</div>
+          <div class="marquee__item">DOM</div>
+          <div class="marquee__item">Event Loop</div>
+        </div>
+      </div>
+      <div class="marquee marquee--reverse">
+        <div class="marquee__inner">
+          <div class="marquee__item">SCSS</div>
+          <div class="marquee__item">Javascript</div>
+          <div class="marquee__item">ES6</div>
+          <div class="marquee__item">Webpack</div>
+          <div class="marquee__item">DOM</div>
+          <div class="marquee__item">Event Loop</div>
+        </div>
+      </div>
+    </section>
+    <!--section.end-->
+
+  </div>
+
+  <script src="<%= htmlWebpackPlugin.files.chunks.index.entry %>"></script>
+
+</body>
+
+</html>

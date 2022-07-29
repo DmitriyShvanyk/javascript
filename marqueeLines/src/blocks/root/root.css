@@ -1,0 +1,50 @@
+.root {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+  position: relative;  
+}
+
+.root::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background:
+    repeating-linear-gradient(to right,
+      transparent 0 calc(25vh - 1px),
+      rgba(255, 255, 255, .05) calc(25vh - 1px) 25vh),
+
+    repeating-linear-gradient(to bottom,
+      transparent 0 calc(25vh - 1px),
+      rgba(255, 255, 255, .05) calc(25vh - 1px) 25vh) #000;
+  animation: animSquareBg 20s linear infinite;
+}
+
+@keyframes animSquareBg {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

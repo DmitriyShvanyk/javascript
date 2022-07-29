@@ -1,0 +1,13 @@
+.section__title {
+  font-size: 5vw;
+  font-weight: 700;
+  text-align: center;
+  padding: 2rem;
+  padding-bottom: 0;
+}
+
+@media (max-width:576px) {
+  .section__title {
+    font-size: 10vw;
+  }
+}
