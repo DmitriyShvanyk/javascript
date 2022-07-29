@@ -1,0 +1,101 @@
+/* ---------- CAROUSEL HERO.BEGIN ---------- */
+
+.carousel-hero {
+
+	.item {
+		position: relative;
+		min-height: 100vh;
+		color: $color-white;		
+		@include background($bg-dark, center top, no-repeat, cover);
+
+		&:before {
+			content: '';
+			@include overlay();
+			background: rgba($bg-dark, .3);
+		}
+
+	}
+
+	&__content {
+		display: table;
+		/* work as min-height */
+		height: 100vh;
+		width: 100%;
+		position: relative;
+		z-index: 99;
+		text-align: center;
+
+		&-cell {
+			display: table-cell;
+			vertical-align: middle;
+			padding: 160px 25px 80px;
+		}
+
+	}
+	&__title {
+		max-width: 590px;
+		margin: 0 auto 6px auto;
+		font-size: 64px;
+		line-height: 1.12;
+		font-family: 'Intro Black', 'Intro Bold', sans-serif;
+	}
+	&__subtitle {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 1.88;
+		letter-spacing: .5px;
+	}
+
+	.owl-dots {
+		position: absolute;
+		bottom: 22px;
+		left: 18px;
+		margin: 0;
+
+		.owl-dot span {
+			height: 6px;
+			width: 42px;
+			margin: 5px 10px;
+			background: rgba($bg-black, .4);
+			border-radius: 0;
+			transform: skew(30deg);
+		}
+		.owl-dot.active span,
+		.owl-dot:hover span {
+			background: $bg-brand;
+		}
+
+	}
+	.owl-nav.disabled + .owl-dots {
+		margin-top: 0;
+	}
+
+	@include grid(767){
+
+		&__title {
+			font-size: 54px;
+		}
+
+	}
+	@include grid(576){
+
+		&__title {
+			font-size: 44px;
+		}
+
+	}
+	@include grid(480){
+
+		&__title {
+			font-size: 34px;
+		}
+		&__subtitle {
+			font-size: 16px;
+			line-height: 1.5;
+		}
+
+	}
+
+}
+
+/* ---------- CAROUSEL HERO.END ---------- */

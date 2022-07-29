@@ -1,0 +1,60 @@
+/* ---------- CLIENTS.BEGIN ---------- */
+
+#clients {
+	padding-bottom: 0;
+	max-width: 1185px;
+
+	.heading {
+		margin-bottom: 30px;
+	}
+}
+
+.clients {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	&:after {
+		content: '';
+		display: table;
+	}
+
+	&__item {
+		margin: 0 0 10px;
+	}
+
+	&:after,
+	&__item {
+		width: calc(100% / 5 - 20px);
+	}
+
+	@include grid(767){
+		
+		&:after {
+			display: none;
+		}
+		&__item {
+			width: calc(100% / 4);
+		}
+		
+	}	
+	
+	@include grid(576){
+
+		&__item {
+			width: calc(100% / 3);
+		}
+
+	}
+
+}
+
+@include grid(767){
+
+	.clients {
+		justify-content: center;
+	}
+
+}
+
+/* ---------- CLIENTS.END ---------- */

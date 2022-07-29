@@ -1,0 +1,272 @@
+/* ---------- NAVBAR.BEGIN ---------- */
+
+.navbar {
+	height: 80px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+	font-family: 'Intro', sans-serif;
+
+	&:before,
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		background: $bg-dark;
+		height: 100%;
+	}
+	&:before {
+		right: 0;
+		width: 90%;
+	}
+	&:after {
+		right: 90%;
+		width: 60px;
+		transform: skew(30deg);
+		margin-right: -30px;
+	}
+
+	.container {
+		@include paddingTopBottom(0px, 0px);
+	}
+
+	&__inner {
+		@include flexCenter();
+		justify-content: space-between;
+	}
+
+	&__content {
+		@include flexCenter();
+		position: relative;
+		z-index: 99;
+	}
+
+	&__brand {
+		outline: none;
+		position: relative;
+		z-index: 99;
+		transform: translateY(65px);
+		transition: transform .3s ease;
+
+		> img {
+			max-height: 57px;
+		}
+	}
+
+	&__menu {
+		padding: 0;
+		margin: 0;
+
+		& + .btn {
+			margin-left: 25px;
+		}
+
+		&-list {
+			display: inline-block;
+			vertical-align: top;
+			list-style: none;
+			font-size: 0;
+
+			&--active {
+				
+				.navbar__menu-link {					
+					cursor: text;
+					color: $color-dark;					
+
+					&:hover,
+					&:focus,
+					&:active {
+						color: $color-dark;
+					}
+
+					&:before,
+					&:hover:before {
+						background: $bg-brand;
+					}
+				}
+
+			}
+
+		}
+		&-link {
+			@include flexCenter();
+			text-transform: uppercase;
+			color: $color-white;
+			height: 80px;
+			position: relative;
+			@include paddingLeftRight(24px, 24px);
+			font-size: $font-size-default;
+			font-weight: 700;
+			text-decoration: none;
+
+			span {
+				position: relative;
+				z-index: 9;
+			}
+
+			&:before {
+				content: '';
+				@include overlay();
+				transform: skew(30deg);
+				background: transparent;
+				transition: background .3s ease;
+			}
+
+			&:hover,
+			&:focus,
+			&:active {
+				color: $color-white;
+				text-decoration: none;
+			}
+			&:hover:before {
+				background: $bg-black;
+			}
+
+		}
+
+	}
+
+	&__hamburger {
+		display: none;
+		background: none;
+		border: none;
+		width: 28px;
+		height: 18px;
+		position: relative;
+		transform: rotate(0deg);
+		transition: .3s ease-in-out;
+		cursor: pointer;
+
+		span {
+			display: block;
+			position: absolute;
+			left: 0;
+			height: 2px;
+			width: 100%;
+			background: $bg-brand;
+			opacity: 1;			
+			transform: skew(30deg) rotate(0deg);
+			transition: .25s ease-in-out;
+
+			&:nth-child(1) {
+				top: 0px;
+			}
+			&:nth-child(2) {
+				top: 8px;
+			}
+			&:nth-child(3) {
+				top: 16px;
+			}
+
+		}
+
+		&--open {
+
+			span {
+				&:nth-child(1) {
+					top: 8px;
+					transform: rotate(135deg);
+				}
+				&:nth-child(2) {
+					opacity: 0;
+					left: -28px;
+				}
+				&:nth-child(3) {
+					top: 8px;
+					transform: rotate(-135deg);
+				}
+			}
+		}
+
+	}
+
+	&--active {
+		box-shadow: 0 2px 15px rgba(0,0,0,.25);
+		
+		.navbar__brand {
+			transform: translateY(0);
+		}
+
+		&:before {
+			width: 100%;
+		}
+		&:after {
+			display: none;
+		}
+
+	}
+
+
+	@include grid(1024){
+
+		.container {			
+			@include paddingTopBottom(11.5px, 11.5px);
+		}
+		&__brand {
+			transform: translateY(0);
+		}
+		&__content {
+			border-top: 1px solid $border-color-brand;
+			padding: 25px;
+			display: block;
+			position: absolute;
+			top: 80px;
+			left: 0;
+			width: 100%;
+			min-height: calc(100vh - 80px);
+			background: $bg-dark;
+			transform: translateX(100%);
+			transition: transform .3s ease;
+
+			&--open {
+				transform: translateX(0%);
+			}
+		}
+
+		&__menu {
+
+			& + .btn {
+				@include marginLeftRight(0px, 0px);
+				@include marginTopBottom(15px, 15px);
+				width: 100%;
+			}
+
+			&-list {
+				display: block;
+			}
+
+			&-link {
+				height: 40px;
+				@include paddingLeftRight(24px, 24px);
+				font-size: 14px;
+				font-weight: 700;
+			}
+
+		}
+
+		&__hamburger {
+			display: block;
+		}
+
+	}
+
+}
+
+@include grid(1024){
+
+	.navbar {
+
+		&:before {
+			width: 100%;
+		}
+		&:after {
+			display: none;
+		}
+
+	}
+
+}
+
+/* ---------- NAVBAR.END ---------- */

@@ -1,0 +1,44 @@
+@charset 'utf-8';
+
+
+/* ==================== ABSTRACTS ==================== */
+
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+
+/* ==================== BASE ==================== */
+
+@import 'base/fonts';
+@import 'base/basic';
+@import 'base/typography';
+
+
+
+/* ==================== PLUGINS ==================== */
+
+@import 'plugins/owl.carousel/owl.carousel.min';
+@import 'plugins/owl.carousel/owl.theme.default.min';
+@import 'plugins/owl.carousel/carousel-hero';
+
+@import 'plugins/fancybox/jquery.fancybox.min';
+
+
+
+/* ==================== COMPONENTS ==================== */
+
+@import 'components/btns';
+@import 'components/socials';
+
+
+
+/* ==================== LAYOUT ==================== */
+
+@import 'layout/header';
+@import 'layout/navbar';
+@import 'layout/sections/services';
+@import 'layout/sections/cases';
+@import 'layout/sections/clients';
+@import 'layout/sections/about';
+@import 'layout/sections/contacts';
+@import 'layout/footer';

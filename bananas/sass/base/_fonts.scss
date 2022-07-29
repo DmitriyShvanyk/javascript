@@ -1,0 +1,163 @@
+//-------------------------------------------------//
+// =  fonts.begin
+//-------------------------------------------------//
+
+$font-path: '../fonts';
+
+
+/* font family Intro */
+
+@font-face {
+	font-family: 'Intro';
+	src: url('#{$font-path}/intro/Intro-Regular.eot');
+	src: local('#{$font-path}/intro/Intro Regular'), local('Intro-Regular'),
+		url('#{$font-path}/intro/Intro-Regular.eot?#iefix') format('embedded-opentype'),
+		url('#{$font-path}/intro/Intro-Regular.woff') format('woff'),
+		url('#{$font-path}/intro/Intro-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Intro';
+	src: url('#{$font-path}/intro/Intro-Bold.eot');
+	src: local('#{$font-path}/intro/Intro Bold'), local('Intro-Bold'),
+		url('#{$font-path}/intro/Intro-Bold.eot?#iefix') format('embedded-opentype'),
+		url('#{$font-path}/intro/Intro-Bold.woff') format('woff'),
+		url('#{$font-path}/intro/Intro-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Intro';
+	src: url('#{$font-path}/intro/Intro-Black.eot');
+	src: local('#{$font-path}/intro/Intro Black'), local('Intro-Black'),
+		url('#{$font-path}/intro/Intro-Black.eot?#iefix') format('embedded-opentype'),
+		url('#{$font-path}/intro/Intro-Black.woff') format('woff'),
+		url('#{$font-path}/intro/Intro-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Intro Bold';
+	src: url('#{$font-path}/intro/Intro-Bold-Italic.eot');
+	src: local('#{$font-path}/intro/Intro Bold Italic'), local('Intro-Bold-Italic'),
+		url('#{$font-path}/intro/Intro-Bold-Italic.eot?#iefix') format('embedded-opentype'),
+		url('#{$font-path}/intro/Intro-Bold-Italic.woff') format('woff'),
+		url('#{$font-path}/intro/Intro-Bold-Italic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Intro Book';
+	src: url('#{$font-path}/intro/Intro-Book-Italic.eot');
+	src: local('#{$font-path}/intro/Intro Book Italic'), local('Intro-Book-Italic'),
+		url('#{$font-path}/intro/Intro-Book-Italic.eot?#iefix') format('embedded-opentype'),
+		url('#{$font-path}/intro/Intro-Book-Italic.woff') format('woff'),
+		url('#{$font-path}/intro/Intro-Book-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Intro Black';
+	src: url('#{$font-path}/intro/Intro-Black-Italic.eot');
+	src: local('#{$font-path}/intro/Intro Black Italic'), local('Intro-Black-Italic'),
+		url('#{$font-path}/intro/Intro-Black-Italic.eot?#iefix') format('embedded-opentype'),
+		url('#{$font-path}/intro/Intro-Black-Italic.woff') format('woff'),
+		url('#{$font-path}/intro/Intro-Black-Italic.ttf') format('truetype');
+	font-weight: 900;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Intro Book';
+	src: url('#{$font-path}/intro/Intro-Book.eot');
+	src: local('#{$font-path}/intro/Intro Book'), local('Intro-Book'),
+		url('#{$font-path}/intro/Intro-Book.eot?#iefix') format('embedded-opentype'),
+		url('#{$font-path}/intro/Intro-Book.woff') format('woff'),
+		url('#{$font-path}/intro/Intro-Book.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Intro Regular';
+	src: url('#{$font-path}/intro/Intro-Regular-Italic.eot');
+	src: local('#{$font-path}/intro/Intro Regular Italic'), local('Intro-Regular-Italic'),
+		url('#{$font-path}/intro/Intro-Regular-Italic.eot?#iefix') format('embedded-opentype'),
+		url('#{$font-path}/intro/Intro-Regular-Italic.woff') format('woff'),
+		url('#{$font-path}/intro/Intro-Regular-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+
+
+
+
+
+/* font family Graphik */
+
+@font-face {
+    font-family: 'Graphik';
+    src: url('#{$font-path}/graphik/Graphik-Regular.woff2') format('woff2'),
+        url('#{$font-path}/graphik/Graphik-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Graphik';
+    src: url('#{$font-path}/graphik/Graphik-RegularItalic.woff2') format('woff2'),
+        url('#{$font-path}/graphik/Graphik-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Graphik';
+    src: url('#{$font-path}/graphik/Graphik-Medium.woff2') format('woff2'),
+        url('#{$font-path}/graphik/Graphik-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Graphik';
+    src: url('#{$font-path}/graphik/Graphik-MediumItalic.woff2') format('woff2'),
+        url('#{$font-path}/graphik/Graphik-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Graphik';
+    src: url('#{$font-path}/graphik/Graphik-Semibold.woff2') format('woff2'),
+        url('#{$font-path}/graphik/Graphik-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Graphik';
+    src: url('#{$font-path}/graphik/Graphik-SemiboldItalic.woff2') format('woff2'),
+        url('#{$font-path}/graphik/Graphik-SemiboldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Graphik';
+    src: url('#{$font-path}/graphik/Graphik-Bold.woff2') format('woff2'),
+        url('#{$font-path}/graphik/Graphik-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+//-------------------------------------------------//
+// =  fonts.end
+//-------------------------------------------------//

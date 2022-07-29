@@ -1,0 +1,87 @@
+/* ---------- TYPOGRAPHY.BEGIN ---------- */
+
+.heading {
+	max-width: 755px;
+	margin: 0 auto 42px auto;
+	text-align: center;
+
+	&--800 {
+		max-width: 800px;
+	}
+
+	&__title {
+		font-size: 56px;
+		line-height: 1.29;
+		font-family: 'Intro Black', 'Intro Bold', sans-serif;
+		position: relative;
+		text-transform: uppercase;
+		margin: 0 0 12px;
+
+		> span {
+			position: relative;
+
+			&:before {
+				content: "";
+				position: absolute;
+				top: 50%;
+				left: 0;
+				width: 8px;
+				height: 66px;
+				background: $bg-brand;
+				margin-top: -28px;
+				transform: skew(30deg);
+				z-index: -1;
+				transition: transform .3s ease;
+			}			
+
+		}
+		
+		&:hover{			
+			> span{
+				&:before{
+					transform: skew(30deg) translate(5px, -5px);
+				}
+			}
+			
+		}
+		
+
+		+ p {
+			margin-top: 10px;
+		}
+
+	}
+
+	p {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 1.815;
+		letter-spacing: .4px;
+	}
+
+	@include grid(767){
+
+		&__title {
+			font-size: 46px;
+		}
+
+	}
+
+	@include grid(576){
+
+		&__title {
+			font-size: 36px;
+		}
+
+	}
+	@include grid(359){
+
+		&__title {
+			font-size: 32px;
+		}
+
+	}
+
+}
+
+/* ---------- TYPOGRAPHY.END ---------- */

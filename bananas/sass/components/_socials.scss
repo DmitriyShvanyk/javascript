@@ -1,0 +1,55 @@
+/* ---------- SOCIALS.BEGIN ---------- */
+
+.social {
+	display: flex;
+	
+	&__link {
+		display: block;
+		width: 38px;
+		height: 30px;
+		line-height: 30px;
+		text-align: center;
+		position: relative;
+		@include marginLeftRight(13px, 13px);
+		transition: opacity .3s ease;
+
+		&:before {
+			content: '';
+			@include overlay();
+			background: $bg-brand;
+			border: 1px solid $border-color-brand;
+			transform: skew(30deg);			
+			transition: background .3s ease;
+		}
+		
+		&-i{
+			position: relative;
+			z-index: 99;
+			vertical-align: middle;
+			
+			path{
+				transition: fill .3s ease;
+			}
+		}
+			
+		
+		&:hover,
+		&:focus,
+		&:active{
+			color: $color-brand;
+			
+			&:before{
+				background: $bg-dark;
+			}
+			
+			.social__link-i path{
+				fill: $color-brand;
+			}
+			
+		}		
+
+	}	
+
+}
+
+/* ---------- SOCIALS.END ---------- */

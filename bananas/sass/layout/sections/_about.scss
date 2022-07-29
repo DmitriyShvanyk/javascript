@@ -1,0 +1,60 @@
+/* ---------- ABOUT.BEGIN ---------- */
+
+.about {
+	max-width: 735px;
+	margin: 0 auto 33px auto;
+	text-align: center;
+
+	&__avatar {
+		margin-bottom: 28px;
+
+		&-img {
+			width: 100px;
+			height: 100px;
+			object-fit: cover;
+			border-radius: 5px;
+		}
+
+		&-name {
+			font-size: 18px;
+			margin-top: 22px;
+			margin-bottom: 8px;
+			font-style: italic;
+			font-weight: 500;
+			letter-spacing: .5px;
+		}
+		
+		&-position {
+			margin-top: 8px;
+			font-weight: 500;
+		}
+
+	}
+
+	&__desc {
+		font-size: 28px;
+		line-height: 1.75;
+		position: relative;
+		letter-spacing: .6px;
+
+		&:before {
+			content: "";			
+			@include center();			
+			background: url('../img/about/decoration.svg') no-repeat 0 0;
+			width: 134px;
+			height: 157px;			
+			z-index: -1;
+		}
+	}
+
+	@include grid(576){
+
+		&__desc {
+			font-size: 24px;
+		}
+
+	}
+
+}
+
+/* ---------- ABOUT.END ---------- */

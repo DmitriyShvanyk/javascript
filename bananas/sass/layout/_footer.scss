@@ -1,0 +1,166 @@
+/* ---------- FOOTER.BEGIN ---------- */
+
+.footer {
+	color: $color-white;
+	background: $bg-dark;
+	min-height: 175px;	
+	font-size: 12px;
+
+	.container {
+		padding-top: 28px;
+		padding-bottom: 28px;
+	}
+
+	&__row {
+
+		&--top,
+		&--bottom{
+			display: flex;
+		}
+		&--top {			
+			justify-content: space-between;
+		}
+		&--bottom {			
+			align-items: center;
+		}
+
+	}
+
+	&__item {
+		margin-bottom: 18px;
+	}
+
+	&__left {
+		.footer__item {
+			display: inline-block;
+			vertical-align: top;
+			margin-right: 57px;
+		}
+	}
+
+
+	&__title {
+		font-family: 'Intro', sans-serif;
+		text-transform: uppercase;
+		margin-top: 0;
+		margin-bottom: 4px;
+		font-size: 16px;
+		line-height: 1.6;
+		font-weight: 500;
+		letter-spacing: .9px;
+	}
+
+	&__phone {
+		font-weight: 700;
+		font-size: 17px;
+		color: $color-white;
+		letter-spacing: 1px;
+		transition: color .3s ease;
+	}
+
+	.social {
+		margin: 17px 0;
+	}
+
+	&__copy {
+		color: rgba($color-white, .5);
+		margin-right: 30px;
+	}
+
+	&__menu {
+		padding: 0;
+		margin: 0;
+
+		&-item {
+			display: inline-block;
+			vertical-align: top;
+		}
+		&-link {
+			color: $color-brand;
+			margin-right: 25px;
+			display: block;
+			transition: .3s ease;
+
+			&:hover,
+			&:focus,
+			&:active {
+				text-decoration: underline;
+			}
+		}
+
+	}
+
+	@include grid(767){
+
+		&__row {
+
+			&--top,
+			&--bottom{
+				display: block;
+			}
+
+			&--bottom {				
+				text-align: center;
+			}
+
+		}
+
+		&__left {
+			display: flex;
+			justify-content: space-between;
+
+			.footer__item {
+				margin-right: 0;
+			}
+		}
+
+		&__right {			
+			text-align: center;
+
+			.footer__item {
+				display: inline-block;
+				vertical-align: top;
+			}
+
+		}
+
+		&__menu {			
+			
+			&-link {					
+				margin: 15px 5px;				
+			}
+
+		}
+		
+		&__copy{
+			margin-bottom: 25px;
+		}
+
+	}
+	
+	@include grid(576){
+		
+		&__title {
+			font-size: 12px;
+		}
+		&__phone {
+			font-size: 14px;
+			letter-spacing: 0;
+		}
+		
+	}
+	
+	@include grid(359){
+		
+		&__title {
+			font-size: 10px;
+		}
+		&__phone {
+			font-size: 12px;
+		}
+		
+	}
+
+}
+
+/* ---------- FOOTER.END ---------- */
